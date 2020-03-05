@@ -16,7 +16,7 @@ button.on('click',function(){
     //console.log(data);
     var filteredData = tableData.filter(tableData=>tableData.datetime===inputValue);
     //console.log(filteredData);
-    //remove any children row
+    //remove any children from tbody
     tbody.html('');
     //replace all data with filtered data
     filteredData.forEach(function(fData){

@@ -37,7 +37,30 @@
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
                         <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <!-- On keyup calls 'ac' function when a key is released -->
+                        <input class="form-control" id="datetime" type="text" list="datelist" onkeyup="ec(this.value)">
+                        <datalist id="datelist">
+                        </datalist>
+                        <label for="citySearch">Search by City</label>
+                        <!-- On keyup calls 'ac' function when a key is released -->
+                        <input class="form-control" id="cityInput" type="text" list="citylist" onkeyup="ac(this.value)">
+                        <datalist id="citylist">
+                        </datalist>
+                        <label for="stateSearch">Search by State</label>
+                        <!-- On keyup calls 'bc' function when a key is released -->
+                        <input class="form-control" id="stateInput" type="text" list="statelist" onkeyup="bc(this.value)">
+                        <datalist id="statelist">
+                        </datalist>
+                        <label for="shapeSearch">Search by Shape</label>
+                        <!-- On keyup calls 'cc' function when a key is released -->
+                        <input class="form-control" id="shapeInput" type="text" list="shapelist" onkeyup="cc(this.value)">
+                        <datalist id="shapelist">
+                        </datalist>
+                        <label for="countrySearch">Search by Country</label>
+                        <!-- On keyup calls 'dc' function when a key is released -->
+                        <input class="form-control" id="countryInput" type="text" list="countrylist" onkeyup="dc(this.value)">
+                        <datalist id="countrylist">
+                        </datalist>
                       </li>
                     </ul>
                   </div>
